@@ -5,37 +5,46 @@
 </head>
 <body>
 
-Name:<input type="text" name="name"> <br>
-Email:<input type="Email" name="name"> <br>
-Date:<input type="Date" name="name"> <br>
-Datetime:<input type="Datetime-local" name="name"> <br>
+<td>
+ <tr align="center"> Name:<input align="middle" type="text" name="name" placeholder="Enter Name" required=""> </tr> 
+</td> 
+<br>
+Email:<input align="center" type="Email" name="" required=""> <br>
+<tr>
+<td align="left"  > Date:<input type="Date" name="name" required=""> </td>
+
+</tr>
+
+ <br>
+Datetime:<input align="middle" type="Datetime-local" name="name" required=""> <br>
 Gender:
-<input type="radio" name="gender" value="Male"> Male
-<input type="radio" name="gender" value="Female">Female
+<input type="radio" name="gender" value="Male" required=""> Male
+<input type="radio" name="gender" value="Female" required="">Female
 
 <br>
 
 Hobbies:
 
-<input type="checkbox" name=""> Music
-<input type="checkbox" name=""> Computers
+<input type="checkbox" name="" required=""> Music
+<input type="checkbox" name="" required=""> Computers
 
 <br>
 
 
-Color:<input type="Color" name="name"> 
+Color:<input type="Color" name="name" required=""> 
 <br>
 
-Password:<input type="Password" name="name">
+Password:<input type="Password" name="pwd" max="3" min="1" required="" >
  <br>
-Upload image:<input type="file" name="name">
+Upload image:<input type="file" name="name" multiple required="" >
  <br>
 
- Quantity:<input type="Number" name="name">
+ Quantity:<input type="Number" name="name" max="5" min="1" required="" >
  <br>
 
  Select Your Country: 
   <select>
+  	<option hidden="">select your country</option>
   	<option>India</option>
     <option>USA</option>
     <option>Australia</option>
@@ -43,16 +52,13 @@ Upload image:<input type="file" name="name">
 <br>
 
 Address:
-<textarea cols="50" rows="4">  </textarea>
+<textarea cols="50" rows="4" required="">  </textarea>
 <br>
 
 <input type="submit" name="">
 <br>
 
 <input type="Reset" name="">
-
-
-
 
 
 
