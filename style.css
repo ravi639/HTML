@@ -1,0 +1,169 @@
+*{margin: 0;
+			padding:0;
+			box-sizing: border-box;}
+		.navigation
+		{
+			height: 60px;
+			background: skyblue;
+			text-align: center;
+			position: relative;
+			top: 0;
+			left: 0;
+
+		}
+		.navigation .bar
+		{
+			display: flex;
+			position: absolute;
+			top: 10px;
+			left: 40%;
+
+		}
+		.navigation .bar .menu
+		{
+			height: 50px;
+			width: 100px;
+			padding: 15px;
+			border: 1px solid;
+		}
+
+		a
+		{
+			text-decoration: none;
+			color: black;
+			height: 60px;
+		}
+
+		
+		.navigation .logo
+		{
+			height: 60px;
+			width: 150px;
+			background: url(https://i.pinimg.com/736x/94/3f/cf/943fcf1ad73de4334e083475d1ab9541.jpg);
+			background-size: 100% 100%;
+			margin-left: 0px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		button
+		{
+			height: 20px;
+			width: 100px;
+		
+		}
+		.sub1
+		{
+			display: none;
+			position: absolute;
+			top:100%;
+			left: 200px;
+			background: coral;
+			border: 2px solid;
+		}
+
+		.navigation .menu:hover .sub1
+		{
+			display: block;
+			height: 75px;
+		}
+		.sub2
+		{
+			display: none;
+			position: absolute;
+			top: 90%;
+			left: 110px;
+			background: skyblue;
+			border: 2px solid;
+
+		}
+		.navigation .menu .sub1 .more:hover .sub2
+		{
+			display: block;
+			height: 95px;
+
+		}*{margin: 0;
+			padding:0;
+			box-sizing: border-box;}
+		.navigation
+		{
+			height: 60px;
+			background: skyblue;
+			text-align: center;
+			position: relative;
+			top: 0;
+			left: 0;
+
+		}
+		.navigation .bar
+		{
+			display: flex;
+			position: absolute;
+			top: 10px;
+			left: 40%;
+
+		}
+		.navigation .bar .menu
+		{
+			height: 50px;
+			width: 100px;
+			padding: 15px;
+			border: 1px solid;
+		}
+
+		a
+		{
+			text-decoration: none;
+			color: black;
+			height: 60px;
+		}
+
+		
+		.navigation .logo
+		{
+			height: 60px;
+			width: 150px;
+			background: url(https://i.pinimg.com/736x/94/3f/cf/943fcf1ad73de4334e083475d1ab9541.jpg);
+			background-size: 100% 100%;
+			margin-left: 0px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		button
+		{
+			height: 20px;
+			width: 100px;
+		
+		}
+		.sub1
+		{
+			display: none;
+			position: absolute;
+			top:100%;
+			left: 200px;
+			background: coral;
+			border: 2px solid;
+		}
+
+		.navigation .menu:hover .sub1
+		{
+			display: block;
+			height: 75px;
+		}
+		.sub2
+		{
+			display: none;
+			position: absolute;
+			top: 90%;
+			left: 110px;
+			background: skyblue;
+			border: 2px solid;
+
+		}
+		.navigation .menu .sub1 .more:hover .sub2
+		{
+			display: block;
+			height: 95px;
+
+		}
