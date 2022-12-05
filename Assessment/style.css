@@ -1,0 +1,85 @@
+.container
+		{
+			height: 60px;
+			width: 100%;
+			border: 1px solid;
+			display: flex;
+			text-align: center;
+			line-height: 60px;
+		}
+		.logo
+		{
+			height: 60px;
+			width: 40%;
+			border: 1px solid;
+			background: radial-gradient(#3498DB,#45B39D,#5D6D7E,#F1948A);
+			font-size: 35px;
+			font-style: italic;
+			font-weight: bolder;
+
+		}
+		.menu
+		{
+			height: 60px;
+			width: 10%;
+			border: 1px solid;
+			position: relative;
+			top: 0;
+			left: 0;
+			transition: 1s;
+			background: #2980B9;
+			font-size: 25px;
+		}
+		a
+		{
+			text-decoration: none;
+			color: black;
+		}
+		button
+		{
+			height: 25px;
+			width: 100%;
+			background:#2980B9;
+			font-size: 25px;
+			border: none;
+		}
+		.dropdown1
+		{
+			position: absolute;
+			top: 100%;
+			left: 0;
+			font-size: 20px;
+			background: #B03A2E;
+			transition: 1s;
+		}
+		.dropdown1 .sub1
+		{
+			width: 165%;
+			border: 1px solid;
+			display: none;
+			background: #B03A2E;
+			transition: 2s;
+
+		}
+		.dropdown2
+		{
+			position: absolute;
+			top: 75%;
+			left: 165%;
+			background: #138D75;
+		}
+		.dropdown2 .sub2
+		{
+			width: 150%;
+			border: 1px solid;
+			display: none;
+			background: #138D75;
+		}
+		.sub1:hover .sub2
+		{
+			display: block;
+		}
+		.menu:hover .sub1
+		{
+			display: block;
+		}

@@ -4,43 +4,223 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="C:\Users\admin\Desktop\Ravi_Github\HTML\style.css"> -->
+		<style>
+
+
+
+
+
+
+
+*{margin: 0;
+			padding:0;
+			box-sizing: border-box;}
+		.navigation
+		{
+			height: 60px;
+			background: skyblue;
+			text-align: center;
+			position: relative;
+			top: 0;
+			left: 0;
+
+		}
+		.navigation .bar
+		{
+			display: flex;
+			position: absolute;
+			top: 10px;
+			left: 40%;
+
+		}
+		.navigation .bar .menu
+		{
+			height: 50px;
+			width: 100px;
+			padding: 15px;
+			border: 1px solid;
+		}
+
+		a
+		{
+			text-decoration: none;
+			color: black;
+			height: 60px;
+		}
+
 		
+		.navigation .logo
+		{
+			height: 60px;
+			width: 150px;
+			background: url(https://i.pinimg.com/736x/94/3f/cf/943fcf1ad73de4334e083475d1ab9541.jpg);
+			background-size: 100% 100%;
+			margin-left: 0px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		button
+		{
+			height: 20px;
+			width: 100px;
+		
+		}
+		.sub1
+		{
+			display: none;
+			position: absolute;
+			top:100%;
+			left: 200px;
+			background: coral;
+			border: 2px solid;
+		}
+
+		.navigation .menu:hover .sub1
+		{
+			display: block;
+			height: 75px;
+		}
+		.sub2
+		{
+			display: none;
+			position: absolute;
+			top: 90%;
+			left: 110px;
+			background: skyblue;
+			border: 2px solid;
+
+		}
+		.navigation .menu .sub1 .more:hover .sub2
+		{
+			display: block;
+			height: 95px;
+
+		}*{margin: 0;
+			padding:0;
+			box-sizing: border-box;}
+		.navigation
+		{
+			height: 60px;
+			background: skyblue;
+			text-align: center;
+			position: relative;
+			top: 0;
+			left: 0;
+
+		}
+		.navigation .bar
+		{
+			display: flex;
+			position: absolute;
+			top: 10px;
+			left: 40%;
+
+		}
+		.navigation .bar .menu
+		{
+			height: 50px;
+			width: 100px;
+			padding: 15px;
+			border: 1px solid;
+		}
+
+		a
+		{
+			text-decoration: none;
+			color: black;
+			height: 60px;
+		}
+
+		
+		.navigation .logo
+		{
+			height: 60px;
+			width: 150px;
+			background: url(https://i.pinimg.com/736x/94/3f/cf/943fcf1ad73de4334e083475d1ab9541.jpg);
+			background-size: 100% 100%;
+			margin-left: 0px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		button
+		{
+			height: 20px;
+			width: 100px;
+		
+		}
+		.sub1
+		{
+			display: none;
+			position: absolute;
+			top:100%;
+			left: 200px;
+			background: coral;
+			border: 2px solid;
+		}
+
+		.navigation .menu:hover .sub1
+		{
+			display: block;
+			height: 75px;
+		}
+		.sub2
+		{
+			display: none;
+			position: absolute;
+			top: 90%;
+			left: 110px;
+			background: skyblue;
+			border: 2px solid;
+
+		}
+		.navigation .menu .sub1 .more:hover .sub2
+		{
+			display: block;
+			height: 95px;
+
+		}
+
+
+
+		</style>
 
 		
 
 		
 </head>
 <body>
-<div class="navigatibon">
-		<dl class="logo" >
+<div class="navigatinon">
+		<div class="logo" >
 			
-		</dl>
-		<dl class="bar">
-			<dd class="menu"> <a href="">Home</a></dd>
-			<dd class="menu"><a href="">About</a></dd>
-			<dd class="menu" class="service"><a href="">Services</a>
-				<dl class="sub1">
-					<dd><a href="">Web Devlopment</dd>
-					<dd><a href="">Marketing</dd>
-					<dd><a href="">Word press</dd>
-					<dd class="more"><a href="">More
-						<dl class="sub2">
-							<dd><a href="">HTML</a></dd>
-							<dd><a href="">CSS</a></dd>
-							<dd><a href="">Java script</a></dd>
-							<dd><a href="">JQuery</a></dd>
-						</dl>
+		</div>
+		<div class="bar">
+			<div class="menu"> <a href="">Home</a></div>
+			<div class="menu"><a href="">About</a></div>
+			<div class="menu" class="service"><a href="">Services</a>
+				<div class="sub1">
+					<div><a href="">Web Devlopment</div>
+					<div><a href="">Marketing</div>
+					<div><a href="">Word press</div>
+					<div class="more"><a href="">More
+						<div class="sub2">
+							<div><a href="">HTML</a></div>
+							<div><a href="">CSS</a></div>
+							<div><a href="">Java script</a></div>
+							<div><a href="">JQuery</a></div>
+						</div>
 
 
 
-					</dd>
-				</dl>
-			</dd>
-			<dd class="menu"><a href="">Blog</a></dd>
-			<dd class="menu"><a href="">Contact</a></dd>
+					</div>
+				</div>
+			</div>
+			<div class="menu"><a href="">Blog</a></div>
+			<div class="menu"><a href="">Contact</a></div>
 			<button class="menu">Log in</button>
-		</dl>
+		</div>
 </div>
 
 </body>
