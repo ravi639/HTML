@@ -1,0 +1,115 @@
+style.css
+	*{margin:0}
+		.main
+		{
+			height: 150px;
+			width: 100%;
+/*			background: gray;*/
+			display: flex;
+			text-align: center;
+			line-height: 150px;
+
+			box-shadow:  0 0 34px black;
+
+			
+		}
+		.main .search
+		{
+			height: 150px;
+			width: 33.33%;
+/*			background: lightblue;*/
+			
+		}
+		.main .search input
+		{
+			height: 40px;
+			width: 80%;
+			border: 1px solid lightgray;
+
+		}
+		.main .search input:focus
+		{
+			outline: none;
+			font-size: 18px;
+			color: gray;
+		}
+
+		.main .search input::placeholder
+		{
+			font-size: 18px;
+			letter-spacing: 2px;
+		}
+		.main .search button 
+		{
+			height: 40px;
+			background: #2fdab8;
+			padding: 2px 14px;
+			border: none;
+		}
+
+		
+		.main .logo
+		{
+			height: 150px;
+			width: 33.33%;
+/*			background: lightcoral;*/
+		}
+
+		.main .logo .logotext 
+		{
+			font-size: 44px;
+/*			background: gray;*/
+			margin: 0;
+		}
+
+		.main .logo .e 
+		{
+			background: #000;
+			color: #fff;
+			font-weight: bold;
+			padding: 15px;
+		}
+		.main .social
+		{
+			height: 150px;
+			width: 33.33%;
+/*			background: lightblue;*/
+			color:gray;
+			letter-spacing: 2px;
+		}
+		.main .social i 
+		{
+			color: #fff;
+		}
+		.fa-facebook-f
+		{
+			background: #3b5998;
+			padding: 12px;
+		}
+		.fa-twitter
+		{
+			background: #1da1f2;
+			padding: 12px;
+		}
+		.fa-instagram 
+		{
+			background: #f46f30;
+			padding: 12px;
+		}
+		.fa-linkedin
+		{
+			background:#0a66c2;
+			padding: 12px;
+		}
+		.y
+		{
+			position: relative;
+		}
+		.fa-solid
+		{
+			position: absolute;
+			top:41px;
+			left:-1px;
+			font-size: 20px;
+			color: #2fdab8;
+		}
