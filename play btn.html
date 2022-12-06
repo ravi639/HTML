@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		.playBtn
+		{
+			height: 80px;
+			width: 80px;
+			background: lightblue;
+			border-radius: 50%;
+			margin: 250px auto;
+			text-align: center;
+			line-height: 80px;
+			position: relative;
+			z-index: 0;
+			font-size: 25px;
+		}
+
+		.effect1,.effect2
+		{
+			height: 80px;
+			width: 80px;
+			background: lightblue;
+			border-radius: 50%;
+			position: absolute;
+			top:0;
+			left: 0;
+			z-index: -1;
+			transition: 0.5s;
+
+			
+		}
+		.effect1
+		{
+			animation: Had_He 1s infinite;
+		}
+
+		.effect2
+		{
+			animation: Had_He_part_2 1s infinite;
+		}
+		/*.playBtn:hover .effect
+		{
+			transform: scale(1.2);
+		}*/
+
+		@keyframes Had_He
+		{
+			from{transform: scale(1.0);opacity: 1}
+			to{transform: scale(1.5);opacity: 0}
+		}
+
+		@keyframes Had_He_part_2
+		{
+			from{transform: scale(1.0);opacity: 1}
+			to{transform: scale(2);opacity: 0}
+		}
+
+		.playBtn:hover 
+		{
+			background: blue;
+		}
+
+		.playBtn:hover i 
+		{
+			color:#fff;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="playBtn">
+		<i class="fa-solid fa-play"></i>
+		<div class="effect1"></div>
+		<div class="effect2"></div>
+	</div>
+
+</body>
+</html>
