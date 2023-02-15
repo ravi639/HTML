@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<title></title>
+   <style type="text/css">
+      
+      .slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slider-images {
+  position: absolute;
+  width: 300%;
+  height: 400px;
+  transition: all 0.5s ease;
+}
+
+.slider-images img {
+  width: 33.33333%;
+  height: 400px;
+  float: left;
+}
+
+.slider-navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.prev,
+.next {
+  display: inline-block;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.prev {
+  margin-right: 20px;
+}
+
+.next:hover,
+.prev:hover {
+  background-color: #666;
+}
+
+   </style>
+</head>
+<body>
+
+
+<h1 align="center"><b><u>MODULE:5(JQuery Basic,Effects & Advance)
+</u></b></h1>
+
+<li>What are the new tags added in HTML5?</li>
+<p><b>Ans:-</b>Now let’s have a look at all the new features that were added in HTML5 that make it better than HTML :<br>
+
+  <li>What is jQuery?</li> 
+   <p><b>Ans:-</b>jQuery is a lightweight, "write less, do more", JavaScript library.
+The purpose of jQuery is to make it much easier to use JavaScript on your website.</p>
+
+
+<li>How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery , JQuery Animation?</li>
+<p><b>Ans:-</b><br>
+1.addClass() - Adds one or more classes to the selected elements.<br>
+2.removeClass() - Removes one or more classes from the selected elements.<br>
+3.toggleClass() - Toggles between adding/removing classes from the selected elements.<br>
+4.css() - Sets or returns the style attribute.</p>
+
+
+<li>How to create slider with animation?</li>
+<p><b>Ans:-</b><br>
+Step 1: Come up with a strategy for the slider. You can make as many modifications as you want to Slider Revolution templates. ...<br>
+Step 2: Update the background image in each slide. ...<br>
+Step 3: Update the text layers in each slide. ...<br>
+Step 4: Edit the button text and design in each slide. ...<br>
+Step 5: Edit the slider navigation.<br>
+Example-:<br>
+<div class="slider">
+  <div class="slider-images">
+    <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" width="100%" height="100%">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg" width="100%" height="100%">
+    <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014__340.jpg" width="100%" height="100%">
+  </div>
+  <div class="slider-navigation">
+    <div class="prev"><</div>
+    <div class="next">></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+   $(document).ready(function() {
+
+  var slideCount = $('.slider-images img').length;
+  var slideWidth = $('.slider').width();
+  var slideHeight = $('.slider').height();
+  var sliderUlWidth = slideCount * slideWidth;
+
+  $('.slider-images').css({ width: sliderUlWidth, height: slideHeight });
+
+  $('.slider-images img:last-child').prependTo('.slider-images');
+
+  function moveLeft() {
+    $('.slider-images').animate({
+      left: +slideWidth
+    }, 500, function () {
+      $('.slider-images img:last-child').prependTo('.slider-images');
+      $('.slider-images').css('left', '');
+    });
+  };
+
+  function moveRight() {
+    $('.slider-images').animate({
+      left: -slideWidth
+    }, 500, function () {
+      $('.slider-images img:first-child').appendTo('.slider-images');
+      $('.slider-images').css('left', '');
+    });
+  };
+
+  $('.prev').click(function () {
+    moveLeft();
+  });
+
+  $('.next').click(function () {
+    moveRight();
+  });
+
+});
+
+</script>
+
+
+</body> 
+</html>
