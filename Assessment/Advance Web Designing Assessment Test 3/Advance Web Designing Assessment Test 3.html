@@ -44,6 +44,7 @@
 
     </style>
   </head>
+  <script type="text/javascript" src="test.js"></script>
   <body>
     <div class="calculator" style="background-color:skyblue;">
       <div class="display">
@@ -70,28 +71,6 @@
         <button style="background-color:black;" onclick="calculate()">=</button>
       </div>
     </div>
-    <script>
-      
-function clearScreen() {
-  document.getElementById('result').value = '';
-}
-
-function backspace() {
-  let value = document.getElementById('result').value;
-  document.getElementById('result').value = value.substr(0, value.length - 1);
-}
-
-function insert(char) {
-  document.getElementById('result').value += char;
-}
-
-function calculate() {
-  let expression = document.getElementById('result').value;
-  let result = eval(expression);
-  document.getElementById('result').value = result;
-}
-
-
-    </script>
+   
   </body>
 </html>
