@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li><b>onchange:An HTML element has been changed</b></li>
+        <p>Example:</p>
+    
+        <select id="selection" onchange="change()">
+        <option value="India">India</option>
+        <option value="Canada">Canada</option>
+        <option value="Germany">Germany</option>
+        <option value="Russia">Russia</option>
+        <option value="Thailand">Thailand</option>
+        </select>
+    
+        <p id="change"></p>
+        <li><b>onclick:The user clicks an HTML element</b></li>
+        <p>Example:</p>
+        <h2 id="click">Click Button to change Text</h2>
+        <button onclick="event2()">Click Here</button>
+       <li><b>onmouseover:The user moves the mouse over an HTML element</b></li>
+       <p>Example:</p>
+       <h2 id="over">cursor over on Button to change Text</h2>
+       <button onmouseover="event3()">Curser Over Me</button>
+        <li><b>onmouseout:The user moves the mouse away from an HTML element</b></li>
+        <p>Example:</p>
+       <h2 id="out">cursor out on Button to change Text</h2>
+       <button onmouseout="event4()">Curser Out</button>
+       <li><b>onkeydown:The user pushes a keyboard key</b></li>
+       <p>Example:</p>
+       <input type="text" onkeydown="event5()" value="click here after press down key">
+       <h2 id="key">This text Change After Press Down Key On Keyboard.</h2>
+    </ol>
+</body>
+</html>
+
+<script>
+    function change()
+    {
+        let selection=document.getElementById('selection').value
+        document.getElementById('change').innerHTML="You are Selected :"+ selection;
+    }
+    function event2()
+    {
+        document.getElementById('click').innerHTML="This Is On Click Event To change Text"
+    }
+    function event3()
+    {
+        document.getElementById('over').innerHTML="This Text Change During mouse over Cursor"
+    }
+    function event4()
+    {
+        document.getElementById('out').innerHTML="This Text Change During Mouse Out from button"
+    }
+    function event5()
+    {
+        document.getElementById('key').innerHTML="This Text Change After Press Down Key...................!"
+
+    }
+
+
+</script>

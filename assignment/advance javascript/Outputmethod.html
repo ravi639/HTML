@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output Method</title>
+    <style>
+        .heading
+        {
+            height: 50px;
+            
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>JavaScript Output Method:</h1>
+    <ol>
+        
+
+        <li><b>document.write():Writing into the HTML output using This Method</b> <br><br> <button onclick="exp2()">Click Here</button><br> <br></li>
+        <li><b>InnerHTML:Writing into an HTML element</b> <br> <br> <button onclick="exp1()">Click Here</button><br></li>
+        <h1>Show Result Of Above Example</h1>
+        <h1 class="heading">   </h1>
+        <li><b>window.alert():Writing into an alert box</b> <br><br> <button onclick="exp3()">Show Alert</button> <br> <br></li>
+        <li><b>console.log():Writing into the browser console</b> <br><br> <button onclick="exp4()">Click Here</button> <br> <br></li>
+        <li><b>window.prompt(): it Allows to take input from user</b> <br> <br> <button onclick="exp5()">Prompt Pop-up</button> <br> <br></li>
+
+    </ol>
+    
+</body>
+</html>
+<script>
+    
+    function exp1()
+    {
+       let heading=document.querySelector('.heading').innerHTML="2)This Is innerHTML Method to Show Result"
+        
+    }
+    let method2=document.getElementById('method2')
+    function exp2()
+    {
+        document.write("<h2>1)This is h2 Tag Write On Window Body Using Document,write() Method</h2>")
+    }
+    function exp3()
+    {
+        alert("This Is Alert Pop-up Output....!")
+    }
+    function exp4()
+    {
+        console.log("This Is console.log Method to write Here")
+    }
+    function exp5()
+    {
+        prompt("This Is Prompt Pop-Up To Get Input =>  5+5")
+    }
+</script>

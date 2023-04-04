@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1"  cellpadding="7" align="center" >
+        <th>Product Info</th>
+        <th>Quantity</th>
+        <th>Price(per unit)</th>
+        <th>Price(Subtotal)</th>
+        <th></th>
+        <tr>
+            <td>Fortunata window Hardware-Decorative Holdback-Mocha</td>
+            <td>Quantity <br> <input type="text" id="inp1" value="" onblur="sum()"></td>
+            <td>Price per Unit <br>$29.99</td>
+            <td>Price(subtotal) <br> <input type="text" id="out1"></td>
+            <td><button onclick="remove1()">Remove</button></td>
+        </tr>
+        <tr>
+            <td>Woven Trellis Window Hardware-Clip Rings-Bronze</td>
+            <td>Quantity <br> <input type="text" id="inp2" onblur="sum()"></td>
+            <td>Price per Unit <br>$12.99</td>
+            <td>Price(subtotal) <br> <input type="text" id="out2" value=""></td>
+            <td><button onclick="remove2()">Remove</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Sub total</td>
+            <td><input type="text" id="res"></td>
+            <td></td>
+
+        </tr>
+    </table>
+</body>
+</html>
+<script>
+    
+    let input1=document.getElementById('inp1')
+    let input2=document.getElementById('inp2')
+    let output1=document.getElementById('out1')
+    let output2=document.getElementById('out2')
+
+    let result=document.getElementById('res')
+    let subtotal=result.value
+    function sum()
+    {
+        let total1=document.getElementById('inp1').value * 29.99; 
+        output1.value=total1;
+        
+      
+        
+         let total2=document.getElementById('inp2').value * 12.99;
+         output2.value=total2;
+        
+         let subtotal=total1+total2 
+
+        result.value=subtotal;
+     }
+
+        function remove1()
+        {
+        if(input1.value="")
+        {
+            
+        }
+        else
+        {
+            output1.value=""
+            total2= document.getElementById('inp2').value * 12.99
+           result.value=total2
+        }
+        } 
+        function remove2()
+        {
+        if(input2.value="")
+        {
+            
+        }
+        else
+        {
+            output2.value=""
+            total1= document.getElementById('inp1').value * 29.99
+           result.value=total1
+        }
+        }
+    
+    
+
+</script>
